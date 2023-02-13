@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { ComponentNameComponent } from './component-name/component-name.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { BuscarComponent } from './buscar/buscar.component';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentNameComponent
+    BuscarComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([
-      { path: '/', component: ComponentNameComponent },
-    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

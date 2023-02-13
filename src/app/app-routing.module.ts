@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ComponentNameComponent } from './component-name/component-name.component';
+import { AppModule } from './app.module';
+import { AppComponent } from './app.component';
+import { BuscarComponent } from './buscar/buscar.component';
+import { RegistroComponent } from './registro/registro.component';
 
 const routes: Routes = [
-    {path:'/',component:ComponentNameComponent},
+    {path:'buscar',component:BuscarComponent},
+    {path:'registro',component:RegistroComponent},
+    {path:'', component:RegistroComponent}
 ];
 
 @NgModule({
